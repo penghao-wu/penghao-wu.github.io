@@ -100,6 +100,7 @@
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#publications">Publications</a></li>
                 <li><a href="#services">Services</a></li>
+                <li><a href="#dog">My Dog Wheaty</a></li>
               </ul>
             </div>
           </div>
@@ -299,6 +300,78 @@
                 <li>ICML 2024</li>
                 <li>ECCV 2024</li>
               </ul>
+            
+              <section id="dog" class="section">
+                <h2 class="title is-3">Meet My Furry Sidekick!</h2>
+                <div class="notification is-light" style="border-radius: 12px; margin: 1.5rem 0; padding: 2rem;">
+                  <div class="columns is-multiline is-vcentered">
+                    <div class="column is-full">
+                      <p class="subtitle is-5">
+                        Say hello to <strong>小麦 (Wheaty)</strong> 🎉<br>
+                        Born on <em>August 5, 2024</em>, she's a corgi with a very long body and not that long legs. Slip her into a raincoat and she transforms into a mini-dachshund on parade!
+                      </p>
+                      <p class="subtitle is-5">
+                        小麦 is the friendliest pup — she spreads tail-wags and smiles wherever she goes. Full of energy, she'll chase every ball in sight (returning is optional, based on her mood 🤷‍♀️). Her true passion? Collecting sticks on walks! 🌳
+                      </p>
+                    </div>
+              
+                    <!-- Three square images -->
+                    <div class="column is-one-quarter">
+                      <figure class="image is-square" style="overflow:hidden; border-radius:8px;">
+                        <img src="images/dog/wheaty_portrait.jpg" alt="Wheaty portrait"
+                             style="width:100%; height:100%; object-fit:cover;">
+                      </figure>
+                    </div>
+                    <div class="column is-one-quarter">
+                      <figure class="image is-square" style="overflow:hidden; border-radius:8px;">
+                        <img src="images/dog/wheaty_tree.jpg" alt="Wheaty under tree"
+                             style="width:100%; height:100%; object-fit:cover;">
+                      </figure>
+                    </div>
+                    <div class="column is-one-quarter">
+                      <figure class="image is-square" style="overflow:hidden; border-radius:8px;">
+                        <img src="images/dog/wheaty_lying.jpg" alt="Wheaty on the grass"
+                             style="width:100%; height:100%; object-fit:cover;">
+                      </figure>
+                    </div>
+              
+                    <!-- Full-width video -->
+                    <div class="column is-full">
+                      <figure class="image" style="overflow:hidden; border-radius:8px;">
+                        <video controls style="width:100%; height:auto; display:block;">
+                          <source src="images/dog/wheaty_playing.mp4" type="video/mp4">
+                          Your browser does not support the video tag.
+                        </video>
+                        <figcaption class="has-text-centered">Wheaty playing outdoors</figcaption>
+                      </figure>
+                    </div>
+                  </div>
+              
+                  <!-- Like Prompt and Button -->
+                    <div class="has-text-centered" style="margin-top:1.5rem; font-size:1.1rem;">
+                      <span>If you like Wheaty, give her a like — that will make it a tail-wagging day!</span>
+                      <div style="margin-top:0.75rem;">
+                        <button id="like-btn" class="button is-rounded" style="background-color:#ff3860; border-color:#ff3860; color:white; font-size:1.1rem; padding-left:1.5rem; padding-right:1.5rem;">
+                  ❤️&nbsp;Like&nbsp;<strong id="like-count">0</strong>
+                </button>
+                      </div>
+                    </div>
+
+                  <!-- Add like button script -->
+                  <script>
+                    document.addEventListener('DOMContentLoaded', () => {
+                      const btn = document.getElementById('like-btn');
+                      const countEl = document.getElementById('like-count');
+                      btn.addEventListener('click', () => {
+                        countEl.textContent = parseInt(countEl.textContent, 10) + 1;
+                      });
+                    });
+                  </script>
+                </div>
+              </section>
+
+              
+          </div>
           </div>
         </div>
       </div>
@@ -375,6 +448,8 @@
 
 
   </script>
+
+  
 
 
 </body>
